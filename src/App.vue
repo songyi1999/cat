@@ -1,11 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+ <van-button type="primary">主要按钮</van-button>
   <router-view/>
 </template>
-
+<script  lang="ts">
+import { defineComponent } from 'vue';
+export default defineComponent({
+  name: 'App',
+  
+  setup() {
+    return {}
+  },
+});
+  
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
