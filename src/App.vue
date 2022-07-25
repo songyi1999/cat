@@ -1,6 +1,12 @@
 <template>
- <van-button type="primary">主要按钮</van-button>
+
   <router-view/>
+  <van-tabbar route>
+  <van-tabbar-item icon="home-o" to="/">最新</van-tabbar-item>
+  <van-tabbar-item icon="search" to="/category">分类</van-tabbar-item>
+  <van-tabbar-item icon="friends-o" to="/takepic">拍摄</van-tabbar-item>
+  <van-tabbar-item icon="setting-o" to="/my">我的</van-tabbar-item>
+</van-tabbar>
 </template>
 <script  lang="ts">
 import { defineComponent } from 'vue';
@@ -8,7 +14,9 @@ export default defineComponent({
   name: 'App',
   
   setup() {
-    return {}
+    return {
+      
+    }
   },
 });
   
